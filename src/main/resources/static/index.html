@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/js/sockjs.min.js"></script>
+        <script src="/js/stomp.min.js"></script>
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+        <div id="login">
+            Username: <input type="text" id="name" />
+            Message: <input type="text" id="message" />
+            <input type="button" value="Send" onclick="send();" />
+        </div>
+        <div id="messages"></div>
+    </body>
+</html>
