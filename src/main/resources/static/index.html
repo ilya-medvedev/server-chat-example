@@ -6,11 +6,10 @@
         <script src="/js/script.js"></script>
     </head>
     <body>
-        <div id="login">
-            Username: <input type="text" id="name" />
-            Message: <input type="text" id="message" />
-            <input type="button" value="Send" onclick="send();" />
-        </div>
+        <form id="message" onsubmit="return sendMessage()">
+            <input type="text" id="text" placeholder="Text Message" autofocus />
+        </form>
+
         <div id="messages"></div>
     </body>
 </html>
